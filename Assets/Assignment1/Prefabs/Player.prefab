@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3282344586172010490}
   - component: {fileID: 5398416398988707393}
   - component: {fileID: 2867917765247497567}
-  - component: {fileID: 3421271786560558084}
+  - component: {fileID: 1394523421}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -98,7 +98,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3421271786560558084
+--- !u!114 &1394523421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,11 +110,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf0331e45059d34a9fbefbdab919718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCamera: {fileID: 7768096317026391669}
   moveLeft: 97
   moveRight: 100
   moveForward: 119
   moveBack: 115
-  speed: 5
+  moveSpeed: 10
+  viewSpeed: 3
 --- !u!1 &7768096317026391672
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7768096317026391672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.03, y: -0.22000003, z: -6.9103413}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 594021583750901655}
