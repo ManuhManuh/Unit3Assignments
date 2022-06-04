@@ -61,7 +61,6 @@ public class GameManager : MonoBehaviour
 
     public void RoundComplete()
     {
-        m_ballInPlay = false;
 
         if(m_currentScore > m_highScore)
         {
@@ -80,6 +79,8 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
+        m_ballInPlay = false;
+
         // reset the current score to 0
         m_currentScore = 0;
 
