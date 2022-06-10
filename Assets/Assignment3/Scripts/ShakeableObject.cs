@@ -7,7 +7,7 @@ public class ShakeableObject : MonoBehaviour
     public bool IsShaking = false;
 
     [SerializeField] private float shakeSpeed = 2.0f;
-    [SerializeField] private float shakeDistance = 0.1f;
+    [SerializeField] private float shakeDistance = 7.0f;
 
     private float m_startX;
     private float m_startY;
@@ -23,12 +23,14 @@ public class ShakeableObject : MonoBehaviour
     {
         if (IsShaking)
         {
-            Debug.Log($"{gameObject.name} is shaking");
-            float newX = m_startX + Mathf.Sin(Time.deltaTime * shakeSpeed * shakeDistance);
-            float newY = m_startY + Mathf.Sin(Time.deltaTime * shakeSpeed * shakeDistance);
-            float newZ = m_startZ + Mathf.Sin(Time.deltaTime * shakeSpeed * shakeDistance);
+
+            float newX = m_startX + Mathf.Sin(shakeSpeed * Time.deltaTime) * shakeDistance;
+            float newY = m_startY + Mathf.Sin(shakeSpeed * Time.deltaTime) * shakeDistance;
+            float newZ = m_startZ + Mathf.Sin(shakeSpeed * Time.deltaTime) * shakeDistance;
+
 
             transform.position = new Vector3(newX, newY, newZ);
+
         }
     }
 }

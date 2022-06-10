@@ -17,8 +17,8 @@ public class Hammer : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-
-        Collider[] hitColliders = Physics.OverlapBox(transform.position, transform.localScale * 2, Quaternion.identity, m_LayerMask);
+       
+        Collider[] hitColliders = Physics.OverlapBox(transform.position, collision.transform.localScale / 2, Quaternion.identity, m_LayerMask);
         for(int i = 0; i < hitColliders.Length; i++)
         {
             ShakeableObject obj = hitColliders[i].GetComponent<ShakeableObject>();
