@@ -110,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsShaking: 0
   shakeSpeed: 2
-  shakeDistance: 0.1
+  shakeDistance: 7
 --- !u!1 &2628845898461018810
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsShaking: 0
   shakeSpeed: 2
-  shakeDistance: 0.1
+  shakeDistance: 7
 --- !u!1 &2628845899950720414
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsShaking: 0
   shakeSpeed: 2
-  shakeDistance: 0.1
+  shakeDistance: 7
 --- !u!1 &2628845900040371516
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,4 +591,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsShaking: 0
   shakeSpeed: 2
-  shakeDistance: 0.1
+  shakeDistance: 7
